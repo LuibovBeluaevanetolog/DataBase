@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS BandAlbum (
 CREATE TABLE IF NOT EXISTS Songs (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(50) NOT NULL,
-	duration INTEGER,
+	duration TIME,
 	Album_id INTEGER REFERENCES Album(id)
 );
 
